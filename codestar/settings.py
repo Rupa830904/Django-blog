@@ -31,7 +31,7 @@ SECRET_KEY = "rupa_super^secret@key"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-rupa830904-djangoblog-432nf6pnnoq.ws-eu101.gitpod.io','rupa-codestar.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['8000-rupa830904-djangoblog-432nf6pnnoq.ws-eu101.gitpod.io','rupa-codestar.herokuapp.com','localhost','rupa-codestar-218c3cc8fa65.herokuapp.com']
 
 
 # Application definition
