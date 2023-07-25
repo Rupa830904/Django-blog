@@ -31,7 +31,7 @@ SECRET_KEY = "rupa_super^secret@key"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-rupa830904-djangoblog-432nf6pnnoq.ws-eu101.gitpod.io','rupa-codestar.herokuapp.com','localhost','rupa-codestar-218c3cc8fa65.herokuapp.com']
+ALLOWED_HOSTS = ['8000-rupa830904-djangoblog-432nf6pnnoq.ws-eu101.gitpod.io','rupa-codestar.herokuapp.com','localhost','rupa-codestar-218c3cc8fa65.herokuapp.com','8000-rupa830904-djangoblog-432nf6pnnoq.ws-eu102.gitpod.io']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
+    'django_summernote',
     'cloudinary',
     'blog',
 ]
@@ -140,7 +141,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
